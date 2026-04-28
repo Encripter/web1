@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro 4to Aniversario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="lock-screen" class="overlay">
+        <div class="window login-box">
+            <div class="title-bar">Hola! ¿sabes la contraseña?</div>
+            <div class="window-content">
+                <p>Pista: Es nuestro mesesario... 😏</p>
+                <input type="password" id="password-input" placeholder="Contraseña...">
+                <button onclick="checkPassword()">ENTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="desktop" class="hidden">
+        
+        <div class="pixel-cat">
+            <img src="gifgato.gif" alt="Gato pixel">
+        </div>
+
+        <div class="icons-container">
+            <div class="icon" onclick="openYear(1)">
+                <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Carpeta">
+                <span>1er Año-2022</span>
+            </div>
+            <div class="icon" onclick="openYear(2)">
+                <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Carpeta">
+                <span>2do Año-2023</span>
+            </div>
+            <div class="icon" onclick="openYear(3)">
+                <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Carpeta">
+                <span>3er Año-2024</span>
+            </div>
+            <div class="icon" onclick="openYear(4)">
+                <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Carpeta">
+                <span>4to Año-2025</span>
+            </div>
+              <div class="icon" onclick="openYear(5)">
+                <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Carpeta">
+                <span>5to Año-2026</span>
+            </div>
+        </div>
+
+        <div id="year-window" class="window hidden">
+            <div class="title-bar">
+                <span id="window-title">Año</span>
+                <button class="close-btn" onclick="closeYear()">X</button>
+            </div>
+            <div class="window-content" id="content-area"></div>
+        </div>
+
+        <div class="taskbar">
+            <div class="start-btn">INICIO</div>
+            <div class="clock" id="clock">12:00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
